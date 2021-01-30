@@ -30,6 +30,12 @@ class HomeScreenController extends GetxController {
           'https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/9/24/6f060090-1e7b-44b4-be71-83c342c5ab7c1600965593736-Pantaloons-desktop-banner.jpg'),
       ProductCarouseItem(
           'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/9/29/68f1b791-7b82-4b9c-81a6-71eb4e1657f91569717917068-4.jpg'),
+      ProductCarouseItem(
+          'https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/9/25/82188d2f-6ef6-4040-aeaf-4eb14fcecccb1600976836176-Pre-buzz-main_DK_Banner.jpg'),
+      ProductCarouseItem(
+          'https://img.thesouledstore.com/public/theSoul/uploads/slider/20200906111658.jpg'),
+      ProductCarouseItem(
+          'https://images.bewakoof.com/uploads/grid/app/bewakoof-tribe-offer-discount-online-shopping-deskto-bannr-1599219437.jpg'),
     ]);
   }
 
@@ -51,7 +57,7 @@ class HomeScreenController extends GetxController {
   void loadBannerItems() {
     bannerImageItems.addAll([
       BannerImageItem(
-          'https://img.thesouledstore.com/public/theSoul/storage/home-tiles/notebook-new-tile.jpg'),
+          'https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/8d60c69b-9a18-413a-8e28-fe823f8304881598892141339-levis.jpg'),
       BannerImageItem(
           'https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/0aa11afa-b514-42b7-8438-d8ae02a185721598892141729-USPA.jpg'),
     ]);

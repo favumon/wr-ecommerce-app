@@ -82,6 +82,17 @@ class HomeScreen extends StatelessWidget {
                     height: 10,
                   ),
                   SizedBox(height: 500, child: ProductList()),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Obx(() {
+                    return _controller.bannerImageItems != null
+                        ? BannerImage(
+                            imageUrl:
+                                _controller.bannerImageItems[0].bannerImageUrl,
+                          )
+                        : Container();
+                  }),
                 ],
               ),
             )
