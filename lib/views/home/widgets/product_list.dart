@@ -8,6 +8,7 @@ class ProductList extends StatelessWidget {
   Widget build(BuildContext context) {
     final HomeScreenController _controller = Get.find();
     return Obx(() {
+      //to avoid scroll issue
       return IgnorePointer(
         ignoring: true,
         child: CustomScrollView(
