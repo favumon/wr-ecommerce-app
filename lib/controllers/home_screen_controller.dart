@@ -4,14 +4,14 @@ import 'package:wr_ecommerce_app/core/models/product_carouse_Item.dart';
 import 'package:wr_ecommerce_app/core/models/product_item.dart';
 
 class HomeScreenController extends GetxController {
-  var productcarouselItems = <ProductCarouseItem>[].obs;
+  var productCarouselItems = <ProductCarouseItem>[].obs;
   var productItems = <ProductItem>[].obs;
   var bannerImageItems = <BannerImageItem>[].obs;
 
-  var test = 'test'.obs;
-
+//The current page in Carousel that is selected
   var currentPage = 0.obs;
 
+//Automaticaaly called when initialized
   @override
   void onInit() {
     loadProductcarouselItems();
@@ -20,12 +20,8 @@ class HomeScreenController extends GetxController {
     super.onInit();
   }
 
-  change() {
-    test.value = 'favas';
-  }
-
   void loadProductcarouselItems() {
-    productcarouselItems.addAll([
+    productCarouselItems.addAll([
       ProductCarouseItem(
           'https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/9/24/6f060090-1e7b-44b4-be71-83c342c5ab7c1600965593736-Pantaloons-desktop-banner.jpg'),
       ProductCarouseItem(

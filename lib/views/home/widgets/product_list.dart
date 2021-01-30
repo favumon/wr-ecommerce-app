@@ -24,7 +24,7 @@ class ProductList extends StatelessWidget {
                   children: List.generate(
                     _controller.productItems.length,
                     (index) => InkWell(
-                      //  onTap: () => Get.to(ProductDetailsScreen()),
+                      onTap: () {},
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [

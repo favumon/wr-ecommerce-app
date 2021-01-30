@@ -17,6 +17,7 @@ class PageViewIndicator extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: List.generate(
           pageLength,
+          //Do some slection change animation
           (index) => AnimatedContainer(
             height: 6,
             width: selectedIndex == index ? 12 : 10,
@@ -26,6 +27,7 @@ class PageViewIndicator extends StatelessWidget {
                 color: selectedIndex == index ? Colors.white : Colors.white10,
                 borderRadius:
                     selectedIndex == index ? BorderRadius.circular(3) : null,
+                //will switch between Circle or Oval base on selection
                 shape: selectedIndex == index
                     ? BoxShape.rectangle
                     : BoxShape.circle),

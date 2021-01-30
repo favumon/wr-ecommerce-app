@@ -26,14 +26,16 @@ class HomeScreen extends StatelessWidget {
               height: 300,
               child: Stack(
                 children: [
+                  //Product Carousel widget
                   ProductCarousel(),
                   Align(
                     alignment: Alignment.bottomCenter,
                     child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Obx(() {
+                          //Indicates the current selection inside Carousel
                           return PageViewIndicator(
-                            pageLength: _controller.productcarouselItems.length,
+                            pageLength: _controller.productCarouselItems.length,
                             selectedIndex: _controller.currentPage.value,
                           );
                         })),
@@ -44,6 +46,7 @@ class HomeScreen extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
+            //Used to display banner image
             Obx(() {
               return _controller.bannerImageItems != null
                   ? BannerImage(
@@ -54,6 +57,7 @@ class HomeScreen extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
+            //Product list
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(
@@ -85,6 +89,7 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
+                  //Another bannel image
                   Obx(() {
                     return _controller.bannerImageItems != null
                         ? BannerImage(
